@@ -2,7 +2,4 @@ project: naga
 target: naga
 
 cmds:
- - cmd: /glsl_parser
  - cmd: /ir
- - cmd: /spv_parser
- - cmd: /wgsl_parser

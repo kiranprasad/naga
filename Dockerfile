@@ -17,7 +17,7 @@ RUN cd fuzz && ${HOME}/.cargo/bin/cargo fuzz build
 # Package Stage
 FROM ubuntu:20.04
 
-COPY --from=builder naga/fuzz/target/x86_64-unknown-linux-gnu/release/glsl_parser /
-COPY --from=builder naga/fuzz/target/x86_64-unknown-linux-gnu/release/wgsl_parser /
-COPY --from=builder naga/fuzz/target/x86_64-unknown-linux-gnu/release/spv_parser /
+# COPY --from=builder naga/fuzz/target/x86_64-unknown-linux-gnu/release/glsl_parser /
+# COPY --from=builder naga/fuzz/target/x86_64-unknown-linux-gnu/release/wgsl_parser /
+# COPY --from=builder naga/fuzz/target/x86_64-unknown-linux-gnu/release/spv_parser /
 COPY --from=builder naga/fuzz/target/x86_64-unknown-linux-gnu/release/ir /
