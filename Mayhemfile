@@ -1,5 +1,6 @@
 project: naga
 target: naga
+image: ghcr.io/kiranprasad/naga:latest
 
 cmds:
   - cmd: /ir
