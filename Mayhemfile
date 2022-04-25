@@ -1,7 +1,5 @@
 project: naga
-target: naga
-image: ghcr.io/kiranprasad/naga:latest
+target: ir
 
 cmds:
   - cmd: /ir
-  - cmd: /wgsl_parser
