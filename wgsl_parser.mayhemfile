@@ -1,0 +1,5 @@
+project: naga
+target: wgsl_parser
+
+cmds:
+  - cmd: /wgsl_parser
